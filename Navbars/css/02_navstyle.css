@@ -46,6 +46,8 @@ nav {
 }
 
 nav ul {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -59,8 +61,21 @@ nav ul li {
 }
 
 nav ul li a {
+  width: 100%;
   display: inline-block;
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #922222;
+  color: #fca311;
+}
+
+/* Below 960px */
+@media (max-width: 960px) {
+  nav ul {
+    width: 100%;
+  }
 }
