@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
@@ -7,8 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color:antiquewhite;
+  font-family: 'Roboto', sans-serif;  background-color:antiquewhite;
   padding: 20px;
 }
 
@@ -23,7 +22,8 @@ body {
   margin: 10px;
   background: #fff;
   box-shadow: 2px 2px 5px 1px rgba(6, 6, 6, 0.3);
-  transition: transform 0.5s ease-out;
+  transition: transform 0.2s ease-in-out;
+  backface-visibility: hidden;
 }
 
 .box img {
@@ -40,8 +40,7 @@ body {
   line-height: 1.8;
 }
 
-.box:hover {
-  transform: scale(1.05);
+.box:hover{
+  transform: translate(0, -10px);
   cursor: pointer;
-  /* transform: scale(1.05); */
 }
